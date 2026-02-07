@@ -1,42 +1,28 @@
 <?php
-include './functions/calculate_current_earning.function.php';
-include './functions/update_year-to-date.function.php';
-include './functions/calculate_fica_tax.function.php';
-include './functions/adjust_current_earning.function.php';
-include './functions/calculate_income_tax.function.php';
-include './functions/calculate_check_amount.function.php';
-
-include './functions/display-functions/display_payroll_in_table.function.php';
-include './functions/display-functions/display_paroll_in_clerk.function.php';
+include './class/employee.class.php';
+include './functions/display_payroll_in_table.function.php';
 
 $name = readline("\nEmployee Name: ");
-$hourlyWage = floatval(readline("Hourly Wage: "));
-$hoursWorked = floatval(readline("Hours Worked: "));
+$hourly_wage = floatval(readline("Hourly Wage: "));
+$hours_worked = floatval(readline("Hours Worked: "));
 $exemptions = intval(readline("Withholding Exemptions: "));
-$maritalStatus = strtolower(readline("Marital Status - S(Single) M(Married): "));
-$yearToDate = floatval(readline("Previous YTD Earnings: "));
+$marital_status = strtolower(readline("Marital Status - S(Single) M(Married): "));
+$year_to_date = floatval(readline("Previous YTD Earnings: "));
 
-$currentEarning = calculateCurrentEarning($hourlyWage, $hoursWorked);
-$updatedYearToDate = updateYearToDate($yearToDate, $currentEarning);
-$ficaTax = calculateFicaTax($yearToDate, $currentEarning);
-$adjustedEarning = adjustCurrentEarning($currentEarning, $exemptions);
-$incomeTax = calculateIncomeTax($adjustedEarning, $maritalStatus);
-$checkAmount =  calculateCheckAmount($currentEarning, $ficaTax, $incomeTax);
-
-displaySummaryInTable(
+$employee1 = new Employee(
     $name,
-    $currentEarning,
-    $updatedYearToDate,
-    $ficaTax,
-    $incomeTax,
-    $checkAmount
+    $hourly_wage,
+    $hours_worked,
+    $exemptions,
+    $marital_status,
+    $year_to_date,
 );
 
-// displayPayrollInClerk(
-//     $name,
-//     $currentEarning,
-//     $updatedYearToDate,
-//     $ficaTax,
-//     $incomeTax,
-//     $checkAmount
-// );
+displaySummaryInTable(
+    $employee1->get_name(),
+    $employee1->get_current_earning(),
+    $employee1->get_year_to_date(),
+    $employee1->get_fica_tax(),
+    $employee1->get_income_tax(),
+    $employee1->get_check_amount()
+);
