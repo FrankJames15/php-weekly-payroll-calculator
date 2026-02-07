@@ -55,7 +55,7 @@ The items in Table 2 should be calculated as follows:
 | Over 6,313             | 1,821.86 + 35% of amount over 6,313 |
 
 
-### Table 4: Fedral income tax withheld for a married person paid weekly.
+### Table 4: Federal income tax withheld for a married person paid weekly.
 | Adjusted Weekly Income | Income Tax Withheld                 |
 |------------------------|-------------------------------------|
 | 0 to 154               | 0                                   |
