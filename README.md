@@ -1,5 +1,4 @@
-OVERVIEW
-========
+## OVERVIEW
     PHP application that processes an individual employee's weekly payroll for Tiny Co.
     The program will prompt for the employee's details:
        * name
