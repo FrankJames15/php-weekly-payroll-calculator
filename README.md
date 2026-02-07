@@ -1,13 +1,14 @@
-## OVERVIEW 
-PHP application that processes an individual employee's weekly payroll for Tiny Co.
-The program will **prompt** for the employee's details:
-- name
-- hourly wage
-- hours worked
-- withholding exemptions
-- marital status
-- previos year-to-date earnings
-and then compute and display the payroll results for the current week
+OVERVIEW
+========
+    PHP application that processes an individual employee's weekly payroll for Tiny Co.
+    The program will prompt for the employee's details:
+       * name
+       * hourly wage
+       * hours worked
+       * withholding exemptions
+       * marital status
+       * previos year-to-date earnings
+    and then compute and display the payroll results for the current week
     
 ## PERFORMANCE OBJECTIVE
 At the of this activity, students should be able to:
