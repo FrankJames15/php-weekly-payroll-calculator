@@ -25,7 +25,7 @@ PERFORMANCE OBJECTIVE
             and capture screenshots as evidence of completion. 
 
 Table 1: Employee Data
-    ========
+===================
     +------------+------------+--------------+------------+----------------+----------------------+
     | Name       | Houry Wage | Hours Worked | Exemptions | Martial Status | Year to date earning |
     +------------+------------+--------------+------------+----------------+----------------------+
