@@ -1,0 +1,28 @@
+$name = "Aj Clark";
+$hourlyWage = 45.50;
+$hoursWorked = 38;
+$exemptions = 4;
+$maritalStatus = 'm';
+$yearToDate = 88600.00;
+
+$name = "Ann Miller";
+$hourlyWage = 44.00;
+$hoursWorked = 35;
+$exemptions = 3;
+$maritalStatus = 'm';
+$yearToDate = 68200.00;
+
+$name = "John Smith";
+$hourlyWage = 17.95;
+$hoursWorked = 50;
+$exemptions = 1;
+$maritalStatus = 's';
+$yearToDate = 30604.00;
+
+$name = "Sue Taylor";
+$hourlyWage = 25.50;
+$hoursWorked = 43;
+$exemptions = 2;
+$maritalStatus = 's';
+$yearToDate = 36295.50;
+
